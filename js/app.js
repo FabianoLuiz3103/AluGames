@@ -7,11 +7,11 @@ function alterarStatus(index){
    let img = game.querySelector('.dashboard__item__img');
 
    if(img.classList.contains('dashboard__item__img--rented')){
-    btn.innerHTML = 'Alugar';
+    btn.textContent = 'Alugar';
     btn.classList.remove('dashboard__item__button--return');
     img.classList.remove('dashboard__item__img--rented');
    } else {
-    btn.innerHTML = 'Devolver';
+    btn.textContent = 'Devolver';
     btn.classList.add('dashboard__item__button--return');
     img.classList.add('dashboard__item__img--rented');
    
