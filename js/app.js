@@ -8,9 +8,8 @@ function alterarStatus(index){
 
    
    if(img.classList.contains('dashboard__item__img--rented')){
-        let pg = prompt("Confirma a devolução? (S/N)")
 
-         if( pg.toUpperCase() == 'S'){
+         if(confirm("Confirma a devolução?")){
             btn.textContent = 'Alugar';
             btn.classList.remove('dashboard__item__button--return');
             img.classList.remove('dashboard__item__img--rented');
@@ -27,3 +26,4 @@ function alterarStatus(index){
    
 
 }
+
