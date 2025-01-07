@@ -1,8 +1,7 @@
 
 function alterarStatus(index){
 
-    let gameId = `game-${index}`;
-    let game = document.getElementById(gameId.toString());
+    let game = document.getElementById(`game-${index}`);
 
    let btn = game.querySelector('.dashboard__item__button');
    let img = game.querySelector('.dashboard__item__img');
